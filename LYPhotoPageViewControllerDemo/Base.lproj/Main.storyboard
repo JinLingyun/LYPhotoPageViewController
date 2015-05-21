@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5pm-HO-JKJ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ZQc-US-NfZ">
+            <objects>
+                <navigationController id="5pm-HO-JKJ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pNU-OJ-gle">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="5cT-jD-nQP" kind="relationship" relationship="rootViewController" id="JTB-Dq-lon"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tIg-NO-OKq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="236" y="270"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="d9l-Ac-qB7">
+            <objects>
+                <viewController id="5cT-jD-nQP" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DD6-QF-Heo"/>
+                        <viewControllerLayoutGuide type="bottom" id="9qJ-fJ-kiK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I41-03-B2g">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jyB-vz-DfR">
+                        <barButtonItem key="rightBarButtonItem" title="photoPage" id="uLN-bQ-lKi">
+                            <connections>
+                                <segue destination="ryI-hE-3fr" kind="presentation" identifier="SegueIdentifierPresentToPageGalleryViewController" id="fhn-lE-rkQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5aL-UZ-Lne" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1165" y="276"/>
+        </scene>
+        <!--Photo Gallery View Controller-->
+        <scene sceneID="Pz9-WT-vEk">
+            <objects>
+                <viewController id="ryI-hE-3fr" customClass="LYPhotoGalleryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gr3-Eg-idd"/>
+                        <viewControllerLayoutGuide type="bottom" id="FwT-g8-hwd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sl4-v3-rIj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lyz-Pn-U6T">
+                                <rect key="frame" x="0.0" y="20" width="600" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0W-qb-SWi">
+                                        <rect key="frame" x="15" y="11" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="GP4-03-uEJ"/>
+                                            <constraint firstAttribute="height" constant="44" id="Lx8-YR-0s2"/>
+                                        </constraints>
+                                        <state key="normal" image="backButton">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTappedBackButton:" destination="ryI-hE-3fr" eventType="touchUpInside" id="2h4-ub-ISx"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBC-Lb-W8L">
+                                        <rect key="frame" x="288" y="22" width="25" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8H-OU-JLi">
+                                        <rect key="frame" x="545" y="13" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="dAo-D3-2pJ"/>
+                                            <constraint firstAttribute="width" constant="40" id="ebb-or-qEP"/>
+                                        </constraints>
+                                        <state key="normal" image="deletePhotoButton">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTappedDeleteButton:" destination="ryI-hE-3fr" eventType="touchUpInside" id="Fu8-Wh-ifX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="e8H-OU-JLi" firstAttribute="centerY" secondItem="JBC-Lb-W8L" secondAttribute="centerY" id="6Zv-jW-RC0"/>
+                                    <constraint firstAttribute="trailing" secondItem="e8H-OU-JLi" secondAttribute="trailing" constant="15" id="AFy-f8-FSa"/>
+                                    <constraint firstItem="x0W-qb-SWi" firstAttribute="centerY" secondItem="JBC-Lb-W8L" secondAttribute="centerY" id="F4d-9F-Cg8"/>
+                                    <constraint firstAttribute="centerX" secondItem="JBC-Lb-W8L" secondAttribute="centerX" id="PqI-Xz-RzZ"/>
+                                    <constraint firstAttribute="height" constant="64" id="SYc-Ii-iAm"/>
+                                    <constraint firstAttribute="centerY" secondItem="JBC-Lb-W8L" secondAttribute="centerY" constant="-0.5" id="aiL-Cg-Drr"/>
+                                    <constraint firstItem="x0W-qb-SWi" firstAttribute="leading" secondItem="Lyz-Pn-U6T" secondAttribute="leading" constant="15" id="yHm-8y-XF6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Lyz-Pn-U6T" firstAttribute="width" secondItem="Sl4-v3-rIj" secondAttribute="width" id="266-Fo-8ri"/>
+                            <constraint firstItem="Lyz-Pn-U6T" firstAttribute="leading" secondItem="Sl4-v3-rIj" secondAttribute="leading" id="OIp-kS-tcf"/>
+                            <constraint firstItem="Lyz-Pn-U6T" firstAttribute="top" secondItem="gr3-Eg-idd" secondAttribute="bottom" id="xT0-mQ-422"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="KbW-eJ-jDL" appends="YES" id="Dvw-7q-D1L"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="x0W-qb-SWi" id="Ih0-Zh-XPd"/>
+                        <outlet property="deleteButton" destination="e8H-OU-JLi" id="Z01-17-fI2"/>
+                        <outlet property="indexLabel" destination="JBC-Lb-W8L" id="bf6-4V-jaV"/>
+                        <outlet property="tapGestureRecognizer" destination="KbW-eJ-jDL" id="HvL-AU-Qe3"/>
+                        <outlet property="topView" destination="Lyz-Pn-U6T" id="ctX-Il-3Eh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="agx-Dr-C5j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="KbW-eJ-jDL">
+                    <connections>
+                        <action selector="handleTapGesture" destination="ryI-hE-3fr" id="0VY-p2-nyn"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1924" y="270"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backButton" width="24" height="24"/>
+        <image name="deletePhotoButton" width="40" height="40"/>
+    </resources>
+</document>

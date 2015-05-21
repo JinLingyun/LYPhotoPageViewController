@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84151D1D1AA581E400B76322 /* LYPhotoGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84151D1C1AA581E400B76322 /* LYPhotoGalleryViewController.m */; };
+		84151D201AA584BD00B76322 /* LYPhotoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84151D1F1AA584BD00B76322 /* LYPhotoItem.m */; };
+		84851C2F1AA453E10058D931 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84851C2E1AA453E10058D931 /* main.m */; };
+		84851C321AA453E10058D931 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84851C311AA453E10058D931 /* AppDelegate.m */; };
+		84851C351AA453E10058D931 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84851C341AA453E10058D931 /* ViewController.m */; };
+		84851C381AA453E10058D931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84851C361AA453E10058D931 /* Main.storyboard */; };
+		84851C3A1AA453E10058D931 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84851C391AA453E10058D931 /* Images.xcassets */; };
+		84851C3D1AA453E10058D931 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84851C3B1AA453E10058D931 /* LaunchScreen.xib */; };
+		84851C491AA453E10058D931 /* LYPhotoPageViewControllerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84851C481AA453E10058D931 /* LYPhotoPageViewControllerDemoTests.m */; };
+		84851C551AA454330058D931 /* LYPhotoPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84851C541AA454330058D931 /* LYPhotoPageViewController.m */; };
+		84851C581AA4549F0058D931 /* LYPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84851C571AA4549F0058D931 /* LYPhotoViewController.m */; };
+		84851C5B1AA454F90058D931 /* LYPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84851C5A1AA454F90058D931 /* LYPhotoView.m */; };
+		8791E4C146EFA00D1CEA7267 /* libPods-LYPhotoPageViewControllerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B73629F6FA6EE9F13D2F7349 /* libPods-LYPhotoPageViewControllerDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84851C431AA453E10058D931 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84851C211AA453E10058D931 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84851C281AA453E10058D931;
+			remoteInfo = LYPhotoPageViewControllerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5C805AA7F5D63A97D0AA8259 /* Pods-LYPhotoPageViewControllerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYPhotoPageViewControllerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LYPhotoPageViewControllerDemo/Pods-LYPhotoPageViewControllerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		84151D1B1AA581E400B76322 /* LYPhotoGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYPhotoGalleryViewController.h; sourceTree = "<group>"; };
+		84151D1C1AA581E400B76322 /* LYPhotoGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYPhotoGalleryViewController.m; sourceTree = "<group>"; };
+		84151D1E1AA584BD00B76322 /* LYPhotoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYPhotoItem.h; sourceTree = "<group>"; };
+		84151D1F1AA584BD00B76322 /* LYPhotoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYPhotoItem.m; sourceTree = "<group>"; };
+		84851C291AA453E10058D931 /* LYPhotoPageViewControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYPhotoPageViewControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84851C2D1AA453E10058D931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84851C2E1AA453E10058D931 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84851C301AA453E10058D931 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84851C311AA453E10058D931 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84851C331AA453E10058D931 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		84851C341AA453E10058D931 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		84851C371AA453E10058D931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84851C391AA453E10058D931 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		84851C3C1AA453E10058D931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		84851C421AA453E10058D931 /* LYPhotoPageViewControllerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYPhotoPageViewControllerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84851C471AA453E10058D931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84851C481AA453E10058D931 /* LYPhotoPageViewControllerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYPhotoPageViewControllerDemoTests.m; sourceTree = "<group>"; };
+		84851C531AA454330058D931 /* LYPhotoPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYPhotoPageViewController.h; sourceTree = "<group>"; };
+		84851C541AA454330058D931 /* LYPhotoPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYPhotoPageViewController.m; sourceTree = "<group>"; };
+		84851C561AA4549F0058D931 /* LYPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYPhotoViewController.h; sourceTree = "<group>"; };
+		84851C571AA4549F0058D931 /* LYPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYPhotoViewController.m; sourceTree = "<group>"; };
+		84851C591AA454F90058D931 /* LYPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYPhotoView.h; sourceTree = "<group>"; };
+		84851C5A1AA454F90058D931 /* LYPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYPhotoView.m; sourceTree = "<group>"; };
+		B73629F6FA6EE9F13D2F7349 /* libPods-LYPhotoPageViewControllerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LYPhotoPageViewControllerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA1391512794801154A79084 /* Pods-LYPhotoPageViewControllerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYPhotoPageViewControllerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LYPhotoPageViewControllerDemo/Pods-LYPhotoPageViewControllerDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84851C261AA453E10058D931 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8791E4C146EFA00D1CEA7267 /* libPods-LYPhotoPageViewControllerDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84851C3F1AA453E10058D931 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84851C201AA453E10058D931 = {
+			isa = PBXGroup;
+			children = (
+				84851C2B1AA453E10058D931 /* LYPhotoPageViewControllerDemo */,
+				84851C451AA453E10058D931 /* LYPhotoPageViewControllerDemoTests */,
+				84851C2A1AA453E10058D931 /* Products */,
+				FFEF9D4376B0EB2C116E3FFB /* Pods */,
+				8C5F57C8E9F7ED145B3A8717 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84851C2A1AA453E10058D931 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84851C291AA453E10058D931 /* LYPhotoPageViewControllerDemo.app */,
+				84851C421AA453E10058D931 /* LYPhotoPageViewControllerDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84851C2B1AA453E10058D931 /* LYPhotoPageViewControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				84851C301AA453E10058D931 /* AppDelegate.h */,
+				84851C311AA453E10058D931 /* AppDelegate.m */,
+				84851C331AA453E10058D931 /* ViewController.h */,
+				84851C341AA453E10058D931 /* ViewController.m */,
+				84151D1B1AA581E400B76322 /* LYPhotoGalleryViewController.h */,
+				84151D1C1AA581E400B76322 /* LYPhotoGalleryViewController.m */,
+				84151D1E1AA584BD00B76322 /* LYPhotoItem.h */,
+				84151D1F1AA584BD00B76322 /* LYPhotoItem.m */,
+				84851C361AA453E10058D931 /* Main.storyboard */,
+				84851C391AA453E10058D931 /* Images.xcassets */,
+				84851C3B1AA453E10058D931 /* LaunchScreen.xib */,
+				84851C521AA454110058D931 /* PhotoPageViewController */,
+				84851C2C1AA453E10058D931 /* Supporting Files */,
+			);
+			path = LYPhotoPageViewControllerDemo;
+			sourceTree = "<group>";
+		};
+		84851C2C1AA453E10058D931 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84851C2D1AA453E10058D931 /* Info.plist */,
+				84851C2E1AA453E10058D931 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84851C451AA453E10058D931 /* LYPhotoPageViewControllerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				84851C481AA453E10058D931 /* LYPhotoPageViewControllerDemoTests.m */,
+				84851C461AA453E10058D931 /* Supporting Files */,
+			);
+			path = LYPhotoPageViewControllerDemoTests;
+			sourceTree = "<group>";
+		};
+		84851C461AA453E10058D931 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84851C471AA453E10058D931 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84851C521AA454110058D931 /* PhotoPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84851C531AA454330058D931 /* LYPhotoPageViewController.h */,
+				84851C541AA454330058D931 /* LYPhotoPageViewController.m */,
+				84851C561AA4549F0058D931 /* LYPhotoViewController.h */,
+				84851C571AA4549F0058D931 /* LYPhotoViewController.m */,
+				84851C591AA454F90058D931 /* LYPhotoView.h */,
+				84851C5A1AA454F90058D931 /* LYPhotoView.m */,
+			);
+			path = PhotoPageViewController;
+			sourceTree = "<group>";
+		};
+		8C5F57C8E9F7ED145B3A8717 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B73629F6FA6EE9F13D2F7349 /* libPods-LYPhotoPageViewControllerDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFEF9D4376B0EB2C116E3FFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C805AA7F5D63A97D0AA8259 /* Pods-LYPhotoPageViewControllerDemo.debug.xcconfig */,
+				DA1391512794801154A79084 /* Pods-LYPhotoPageViewControllerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84851C281AA453E10058D931 /* LYPhotoPageViewControllerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84851C4C1AA453E10058D931 /* Build configuration list for PBXNativeTarget "LYPhotoPageViewControllerDemo" */;
+			buildPhases = (
+				C06F28BD35E178FE6AB3915C /* Check Pods Manifest.lock */,
+				84851C251AA453E10058D931 /* Sources */,
+				84851C261AA453E10058D931 /* Frameworks */,
+				84851C271AA453E10058D931 /* Resources */,
+				9D74FF62A63CB23C26981DAC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LYPhotoPageViewControllerDemo;
+			productName = LYPhotoPageViewControllerDemo;
+			productReference = 84851C291AA453E10058D931 /* LYPhotoPageViewControllerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84851C411AA453E10058D931 /* LYPhotoPageViewControllerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84851C4F1AA453E10058D931 /* Build configuration list for PBXNativeTarget "LYPhotoPageViewControllerDemoTests" */;
+			buildPhases = (
+				84851C3E1AA453E10058D931 /* Sources */,
+				84851C3F1AA453E10058D931 /* Frameworks */,
+				84851C401AA453E10058D931 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84851C441AA453E10058D931 /* PBXTargetDependency */,
+			);
+			name = LYPhotoPageViewControllerDemoTests;
+			productName = LYPhotoPageViewControllerDemoTests;
+			productReference = 84851C421AA453E10058D931 /* LYPhotoPageViewControllerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84851C211AA453E10058D931 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = LY;
+				TargetAttributes = {
+					84851C281AA453E10058D931 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					84851C411AA453E10058D931 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 84851C281AA453E10058D931;
+					};
+				};
+			};
+			buildConfigurationList = 84851C241AA453E10058D931 /* Build configuration list for PBXProject "LYPhotoPageViewControllerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84851C201AA453E10058D931;
+			productRefGroup = 84851C2A1AA453E10058D931 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84851C281AA453E10058D931 /* LYPhotoPageViewControllerDemo */,
+				84851C411AA453E10058D931 /* LYPhotoPageViewControllerDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84851C271AA453E10058D931 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84851C381AA453E10058D931 /* Main.storyboard in Resources */,
+				84851C3D1AA453E10058D931 /* LaunchScreen.xib in Resources */,
+				84851C3A1AA453E10058D931 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84851C401AA453E10058D931 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D74FF62A63CB23C26981DAC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LYPhotoPageViewControllerDemo/Pods-LYPhotoPageViewControllerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C06F28BD35E178FE6AB3915C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84851C251AA453E10058D931 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84851C351AA453E10058D931 /* ViewController.m in Sources */,
+				84151D1D1AA581E400B76322 /* LYPhotoGalleryViewController.m in Sources */,
+				84851C551AA454330058D931 /* LYPhotoPageViewController.m in Sources */,
+				84851C581AA4549F0058D931 /* LYPhotoViewController.m in Sources */,
+				84851C321AA453E10058D931 /* AppDelegate.m in Sources */,
+				84851C5B1AA454F90058D931 /* LYPhotoView.m in Sources */,
+				84151D201AA584BD00B76322 /* LYPhotoItem.m in Sources */,
+				84851C2F1AA453E10058D931 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84851C3E1AA453E10058D931 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84851C491AA453E10058D931 /* LYPhotoPageViewControllerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84851C441AA453E10058D931 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84851C281AA453E10058D931 /* LYPhotoPageViewControllerDemo */;
+			targetProxy = 84851C431AA453E10058D931 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84851C361AA453E10058D931 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84851C371AA453E10058D931 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84851C3B1AA453E10058D931 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84851C3C1AA453E10058D931 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84851C4A1AA453E10058D931 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84851C4B1AA453E10058D931 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84851C4D1AA453E10058D931 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C805AA7F5D63A97D0AA8259 /* Pods-LYPhotoPageViewControllerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LYPhotoPageViewControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84851C4E1AA453E10058D931 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA1391512794801154A79084 /* Pods-LYPhotoPageViewControllerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LYPhotoPageViewControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		84851C501AA453E10058D931 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LYPhotoPageViewControllerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LYPhotoPageViewControllerDemo.app/LYPhotoPageViewControllerDemo";
+			};
+			name = Debug;
+		};
+		84851C511AA453E10058D931 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LYPhotoPageViewControllerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LYPhotoPageViewControllerDemo.app/LYPhotoPageViewControllerDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84851C241AA453E10058D931 /* Build configuration list for PBXProject "LYPhotoPageViewControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84851C4A1AA453E10058D931 /* Debug */,
+				84851C4B1AA453E10058D931 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84851C4C1AA453E10058D931 /* Build configuration list for PBXNativeTarget "LYPhotoPageViewControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84851C4D1AA453E10058D931 /* Debug */,
+				84851C4E1AA453E10058D931 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84851C4F1AA453E10058D931 /* Build configuration list for PBXNativeTarget "LYPhotoPageViewControllerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84851C501AA453E10058D931 /* Debug */,
+				84851C511AA453E10058D931 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84851C211AA453E10058D931 /* Project object */;
+}
